@@ -10,6 +10,8 @@ services:
     envVars:
       - key: BOT_TOKEN
         sync: false
+      - key: BOT_NAME
+        sync: false
       - key: API_ID
         sync: false
       - key: API_HASH
