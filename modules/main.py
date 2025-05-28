@@ -62,6 +62,11 @@ def load_initial_data():
   
     log_channel_id = load_log_channel_id(collection)
     authorized_users = load_authorized_users(collection)
+    OWNER_IDS = [742402153]  # or your actual Telegram ID
+for owner_id in OWNER_IDS:
+    if owner_id not in authorized_users:
+        authorized_users.append(owner_id)
+        
     ALLOWED_CHANNEL_IDS = load_allowed_channel_ids(collection)
     my_name = load_name(collection)
     accept_logs = load_accept_logs(collection)
