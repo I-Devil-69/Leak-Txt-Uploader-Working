@@ -1,10 +1,10 @@
 services:
   - type: web
-    name: Demon-uploader 
+    name: Leak-Txt-Uploader-Working
     plan: free
     env: docker
     dockerfilePath: Dockerfile
-    repo: https://github.com/DemonArmyBot/Demon-uploader
+    repo: https://github.com/DemonArmyBot/Leak-Txt-Uploader-Working
     branch: main
     autoDeploy: false
     envVars:
